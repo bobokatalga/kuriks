@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Calibration</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="carousel.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="header&footer.css">
+    <style>
+        @media only screen and (max-width: 3000px) and (min-width: 1100px) {
+            .content {
+                max-width: 1200px;
+                /* Adjust the max-width as needed */
+                margin-left: auto;
+                /* Auto left margin */
+                margin-right: auto;
+                /* Auto right margin */
+                padding: 50px 30px;
+                /* Add padding if needed */
+            }
+
+            .bot {
+                max-width: 1200px;
+                /* Adjust the max-width as needed */
+                margin-left: auto;
+                /* Auto left margin */
+                margin-right: auto;
+                /* Auto right margin */
+                padding: 0 30px;
+                /* Add padding if needed */
+            }
+
+            /* Adjust the margin values for different screen sizes if needed */
+            @media only screen and (max-width: 1280px) {
+                .content {
+                    max-width: 1220px;
+                    /* Adjust max-width for 1280px width */
+                }
+            }
+
+            /* Adjust the margin values for smaller screen sizes if needed */
+            @media only screen and (max-width: 768px) {
+                .content {
+                    max-width: 90%;
+                    /* Adjust max-width for smaller screens */
+                    padding: 0 15px;
+                    /* Adjust padding for smaller screens */
+                }
+            }
+
+
+            iframe {
+                -moz-boder-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .iframe-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                position: relative;
+                margin-bottom: 10px;
+                margin-top: 50px;
+                /* Adjust as needed based on your layout */
+            }
+
+            .iframe-wrapper {
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+            .iframe-container p {
+                text-align: left;
+                margin: 50px 10px;
+                line-height: 3.5;
+            }
+
+            .iframe-container .iframe-wrapper h2 {
+                text-align: center;
+            }
+
+            /* Adjust as needed based on your layout */
+
+
+            /* Dropdown menu animation */
+
+
+            /* LAPTOPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP */
+
+            .title {
+                position: relative;
+                height: 35vw;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+                /* Ensure the title appears above the navbar */
+            }
+
+            .background-image {
+                position: absolute;
+                background-attachment: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom, #5aace3ce, rgba(0, 0, 0, 0.5)), url("./image/h1.jpg");
+                background-size: cover;
+                filter: brightness(60%);
+            }
+
+            h1 {
+                position: relative;
+                font-size: 5vw;
+                margin-top: 200px;
+
+                padding: 10px 20px;
+                z-index: 1;
+                max-width: 1200px;
+                /* Adjust the max-width as needed */
+                margin-left: auto;
+                /* Auto left margin */
+                margin-right: auto;
+                /* Ensure the text appears in front of the background */
+            }
+
+            .div2 {
+                margin: 25px 0;
+                line-height: 2;
+                columns: 2;
+                column-gap: 50px;
+                /* Adjust the gap between columns */
+            }
+
+
+
+
+
+            .ca {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 50px 0;
+                /* Adjust as needed */
+            }
+
+            .ca img {
+                max-width: 110px;
+                /* Set width of image */
+                max-height: 110px;
+                /* Set height of image */
+                margin: -10px 70px;
+                /* Adjust margin between images */
+            }
+
+            .ca p {
+                font-weight: bold;
+            }
+
+            .pab {
+                margin-left: 25px;
+                margin-top: -24px;
+                margin-right: -150px;
+                height: 50px;
+                border-radius: 0 0 5px 5px;
+            }
+
+            .pabt {
+                margin-left: 15px;
+                margin-right: -150px;
+                margin-top: 70px;
+                text-align: center;
+                font-size: 7.5px;
+                width: 200px;
+                line-height: 1;
+            }
+        }
+
+        @media only screen and (max-width: 1099px) {
+            .content {
+                max-width: 1200px;
+                /* Adjust the max-width as needed */
+                margin-left: auto;
+                /* Auto left margin */
+                margin-right: auto;
+                /* Auto right margin */
+
+            }
+
+
+            iframe {
+                -moz-boder-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            .iframe-container {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                position: relative;
+                margin-bottom: 10px;
+                margin-top: 50px;
+                /* Adjust as needed based on your layout */
+            }
+
+            .iframe-wrapper {
+                -moz-border-radius: 10px;
+                -webkit-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+            .iframe-container p {
+                text-align: left;
+                margin: 50px 10px;
+                line-height: 3.5;
+            }
+
+            .iframe-container .iframe-wrapper h2 {
+                text-align: center;
+            }
+
+            /* Adjust as needed based on your layout */
+
+
+            /* Dropdown menu animation */
+
+
+            /* LAPTOPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP */
+
+            .title {
+                position: relative;
+                height: 520px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+                /* Ensure the title appears above the navbar */
+            }
+
+            .background-image {
+                position: absolute;
+                background-attachment: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom, #5aace3ce, rgba(0, 0, 0, 0.5)), url("./image/h1.jpg");
+                background-size: cover;
+                filter: brightness(60%);
+            }
+
+            h1 {
+                position: relative;
+                font-size: 40px;
+                margin-top: 200px;
+
+                padding: 10px 20px;
+                z-index: 1;
+                max-width: 1200px;
+                /* Adjust the max-width as needed */
+                margin-left: auto;
+                /* Auto left margin */
+                margin-right: auto;
+                /* Ensure the text appears in front of the background */
+            }
+
+            .div2 {
+                margin: 25px 0;
+                line-height: 2;
+                columns: 2;
+                column-gap: 50px;
+                /* Adjust the gap between columns */
+            }
+
+
+            .nav-link {
+                font-size: 10px;
+            }
+
+
+            .ca {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 50px 0;
+                /* Adjust as needed */
+            }
+
+            .ca img {
+                max-width: 110px;
+                /* Set width of image */
+                max-height: 110px;
+                /* Set height of image */
+                margin: -10px 70px;
+                /* Adjust margin between images */
+            }
+
+            .ca p {
+                font-weight: bold;
+            }
+
+            .pab {
+                margin-left: 25px;
+                margin-top: -24px;
+                margin-right: -150px;
+                height: 50px;
+                border-radius: 0 0 5px 5px;
+            }
+
+            .pabt {
+                margin-left: 15px;
+                margin-right: -150px;
+                margin-top: 70px;
+                text-align: center;
+                font-size: 7.5px;
+                width: 200px;
+                line-height: 1;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .ca {
+                display: block;
+            }
+
+            .div2 {
+                columns: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white;">
+
+        <!-- Replace "Navbar" text with an image logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="./image/logo.png" alt="Logo" style="background-color: rgb(255, 255, 255);">
+            <!-- Adjust max-height as needed -->
+        </a>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto" style="background-color: white; background-size: 900px;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+
+
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" role="button"
+                        aria-expanded="false">
+                        About us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="permit.html">Permits</a></li>
+                        <li><a class="dropdown-item" href="policies.html">Policies</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                        Accreditation
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="nsf.html">NSF Certification</a></li>
+                        <li><a class="dropdown-item" href="17025.html">ISO/IEC 17025</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="calibration.html" id="navbarDropdownMenuLink2"
+                        role="button" aria-expanded="false">
+                        Calibration
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li><a class="dropdown-item" href="thermometry.html">Thermometry and Hygrometry</a></li>
+                        <li><a class="dropdown-item" href="pressure.html">Pressure</a></li>
+                        <li><a class="dropdown-item" href="mass.html">Mass</a></li>
+                        <li><a class="dropdown-item" href="volume.html">Volume</a></li>
+                        <li><a class="dropdown-item" href="analytical.html">Analytical and Environmental</a></li>
+                        <li><a class="dropdown-item" href="dimentional.html">Dimensional</a></li>
+                        <li><a class="dropdown-item" href="electrical.html">Electrical and Frequency</a></li>
+                        <li><a class="dropdown-item" href="density.html">Density</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button"
+                        aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <li><a class="dropdown-item" href="calibration.html">Calibration</a></li>
+                        <li><a class="dropdown-item" href="training.php">Training and Consultancy</a></li>
+                        <li><a class="dropdown-item" href="proficiency.php">Proficiency Testing</a></li>
+                        <li><a class="dropdown-item" href="inspection.html">Inspection and Certification</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button"
+                        aria-expanded="false">
+                        Contact Us
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <li><a class="dropdown-item" href="ins.php">Calibration and Inspection</a></li>
+                        <li><a class="dropdown-item" href="tra.php">Training and Consultancy</a></li>
+                        <li><a class="dropdown-item" href="pro.php">Proficiency Testing</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Adjust max-height as needed -->
+
+        </div>
+    </nav>
+
+    <div class="title">
+
+        <div class="background-image"></div>
+        <h1 class="divider line double-razor" style="color: white;">Dimensional Laboratory<p
+                style="font-style: italic; font-size: 20px;"><br>"Southern Metrology and Calibration Services, Inc. is a
+                leading industry leader in metrology and calibration, ensuring accurate measurementsand industry
+                excellence through their expertise and dedication."</p>
+            </p>
+        </h1>
+
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2 style="margin-top: 20px;">Dimensional</h2>
+            <div class="div2">
+
+                <ul>
+                    <li>Caliper*
+                        <ul>• Dial Caliper</ul>
+                        <ul>• Digimatic Caliper</ul>
+                        <ul>• Vernier Caliper</ul>
+                    <li>Coating Thickness Gauge</li>
+                    <li>Consistometer (Linear Scale)</li>
+                    <li>Depth Gauge*</li>
+                    <li>Digimatic and Dial Gauge*</li>
+                    <li>Dip Stick </li>
+                    </li>
+                    <li>Feeler Gauge</li>
+                    <li>Gauge Blocks*
+                        <ul>• Grade 1</ul>
+                        <ul>• Grade 2</ul>
+                    </li>
+                    <li>Granite Table/Surface Plate (Flatness) </li>
+                    <li>Go-no-go</li>
+                    <li>Height Gauge*</li>
+                    <ul>• Dial Height Gauge</ul>
+                    <ul>• Digimatic Height Gauge</ul>
+                    <ul>• Vernier Height Gauge</ul>
+                    <li>Length Count Meter</li>
+                    </br>
+                    <li>Measuring Rules*
+                        <ul>• Wooden Ruler</ul>
+                        <ul>• Steel Rule</ul>
+                        <ul>• Plastic Rule</ul>
+                        <ul>• Molding Ruler</ul>
+                    <li>Measuring Tapes*
+                        <Ul>• Self-Retracting Metal Tape</Ul>
+                        <Ul>• Plastic Tape</Ul>
+                    <li>Micrometer *
+                        <ul>• Internal Micrometer</ul>
+                        <ul>• External Micrometer</ul>
+                    </li>
+                    <li>Microscope (Linear Scale)</li>
+                    <li>Pin Gauge</li>
+                    <li>Precision Level Gauge </li>
+                    <li>Profile Projector</li>
+                    <li>Protractor</li>
+                    <li>Ring Gauge</li>
+                    </li>
+                    </li>
+                    <li>Thickness Gauge*
+                        <Ul>• Dial Test Indicators</Ul>
+                        <Ul>• Dial Thickness Gauge</Ul>
+                        <Ul>• Digimatic Thickness Gauge</Ul>
+                    </li>
+
+
+
+                </ul>
+            </div>
+
+
+
+
+
+            <div>Note: <span style="color: red;">The instruments marked with an asterisk (*) are within the scope of
+                    accreditation of Southern Metrology and Calibration Services Inc., a PAB accredited calibration
+                    laboratory to ISO/IEC 17025:2017. For comprehensive information, please refer to the Certificate of
+                    <a style="text-decoration: none;" href="17025.html">Scope of Accreditation.</a>
+                </span></div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <div class="back" style="background-color: #ffffff;">
+        <div class="bot" style="background-color: #ffffff;">
+            <h2 style="margin: 20px 0 30px; text-align: center; padding: 50px 0;">View our areas of expertise</h2>
+            <div class="ca">
+                <div style="text-align: center;">
+                    <a href="thermometry.html">
+                        <img src="./image/c1.png" alt="Image 1" id="qw">
+                    </a>
+                    <p>Thermometry and<br>Hygrometry
+                    </p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="pressure.html">
+                        <img src="./image/c2.png" alt="Image 2" id="qw">
+                    </a>
+                    <p>Pressure</p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="mass.html">
+                        <img src="./image/c3.png" alt="Image 1" id="qw">
+                    </a>
+                    <p>Mass</p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="volume.html">
+                        <img src="./image/c5.png" alt="Image 1" id="qw">
+                    </a>
+                    <p>Volume</p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="analytical.html">
+                        <img src="./image/c7.png" alt="Image 2" id="qw">
+                    </a>
+                    <p>Analytical and<br>Environmental</p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="dimentional.html">
+                        <img src="./image/c8.png" alt="Image 2" id="qw">
+                    </a>
+                    <p>Dimensional</p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="electrical.html">
+                        <img src="./image/c9.png" alt="Image 2" id="qw">
+                    </a>
+                    <p>Electrical and<br>Frequency</p>
+                </div>
+                <div style="text-align: center;">
+                    <a href="density.html">
+                        <img src="./image/c10.png" alt="Image 2" id="qw">
+                    </a>
+                    <p>Density</p>
+                </div>
+                <!-- Repeat for other images -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="up">
+            <h3 class="con">Contact Us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100093160215001&mibextid=JRoKGi">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+            </a>
+        </div>
+        <div class="separator">
+            <div id="separator-5435933ece" class="cmp-separator">
+                <hr class="cmp-separator__horizontal-rule">
+            </div>
+        </div>
+        <div class="divs">
+            <t class="contact"><strong>Contact Details</strong><br>Sales Department<br>Globe: 0945 408 2266<br>Sun: 0925
+                503 1523<br>Manila Line: (02) 8533 0162<br>Laguna Line: (049) 511 8177</t>
+            <t class="address"><strong>Office Address</strong><br>
+                Artica Building, National Highway corner Almazora Street,<br> Canlalay, Biñan City 4024, Laguna,
+                Philippines</t>
+            <t class="email"><strong>Email Address</strong><br>
+                info@southerncalibration.com<br>southerncalab@gmail.com</t>
+            <t class="ser">
+                <strong>Services</strong><br>
+                <a href="ins.php" class="no-style">Calibration and Inspection</a><br>
+                <a href="tra.php" class="no-style">Training and Consultancy</a><br>
+                <a href="pro.php" class="no-style">Proficiency Testing</a>
+            </t>
+
+        </div>
+        <div class="separator">
+            <div id="separator-5435933ece" class="cmp-separator">
+                <hr class="cmp-separator__horizontal-rule">
+            </div>
+        </div>
+        <div class="copyright">PAB ACCREDITED CALIBRATION LABORATORY TO ISO/IEC 17025:2017<br>Copyright © 2024 All
+            Rights Reserved. Southern Metrology and Calibration Services, Inc.
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+
+
+
+
+    <script>
+        // Check if the screen width is below 800px
+        if (window.innerWidth <= 800) {
+            // Variable to track if the dropdown is open
+            var dropdownOpen = false;
+
+            // Add event listeners to toggle dropdowns on click for touch screen devices
+            document.querySelectorAll('.dropdown-toggle').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var dropdownMenu = this.nextElementSibling;
+                    if (!dropdownMenu.classList.contains('show')) {
+                        // Close all other open dropdowns
+                        document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+                            menu.classList.remove('show');
+                        });
+                        dropdownMenu.classList.add('show');
+                        // Update the dropdownOpen variable
+                        dropdownOpen = true;
+                    } else {
+                        // If the dropdown is already open, close it
+                        dropdownMenu.classList.remove('show');
+                        // Update the dropdownOpen variable
+                        dropdownOpen = false;
+                    }
+                });
+            });
+
+            // Add event listener to the navbarDropdownMenuLink element to navigate to other HTML files
+            document.getElementById('navbarDropdownMenuLink').addEventListener('click', function (e) {
+                // If the dropdown is open, prevent navigation
+                if (dropdownOpen) {
+                    e.preventDefault();
+                } else {
+                    // If the dropdown is closed, navigate to about.html
+                    window.location.href = 'about.html';
+                }
+            });
+
+            // Add event listener to the navbarDropdownMenuLink element to navigate to other HTML files
+            document.getElementById('navbarDropdownMenuLink2').addEventListener('click', function (e) {
+                // If the dropdown is open, prevent navigation
+                if (dropdownOpen) {
+                    e.preventDefault();
+                } else {
+                    // If the dropdown is closed, navigate to calibration.html
+                    window.location.href = 'calibration.html';
+                }
+            });
+        }
+    </script>
+
+
+
+
+</body>
+
+</html>

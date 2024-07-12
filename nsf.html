@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Calibration.</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="header&footer.css">
+    <style>
+        .content {
+            max-width: 1200px;
+            /* Adjust the max-width as needed */
+            margin-left: auto;
+            /* Auto left margin */
+            margin-right: auto;
+            /* Auto right margin */
+            padding: 0 30px;
+            /* Add padding if needed */
+        }
+
+        /* Adjust the margin values for different screen sizes if needed */
+        @media only screen and (max-width: 1280px) {
+            .content {
+                max-width: 1220px;
+                /* Adjust max-width for 1280px width */
+            }
+        }
+
+        /* Adjust the margin values for smaller screen sizes if needed */
+        @media only screen and (max-width: 768px) {
+            .content {
+                max-width: 90%;
+                /* Adjust max-width for smaller screens */
+                padding: 0 15px;
+                /* Adjust padding for smaller screens */
+            }
+        }
+
+        .content {
+            max-width: 1200px;
+            /* Adjust the max-width as needed */
+            margin-left: auto;
+            /* Auto left margin */
+            margin-right: auto;
+            /* Auto right margin */
+            padding: 0 30px;
+            /* Add padding if needed */
+        }
+
+        /* Adjust the margin values for different screen sizes if needed */
+        @media only screen and (max-width: 1280px) {
+            .content {
+                max-width: 1220px;
+                /* Adjust max-width for 1280px width */
+            }
+        }
+
+        /* Adjust the margin values for smaller screen sizes if needed */
+        @media only screen and (max-width: 768px) {
+            .content {
+                max-width: 90%;
+                /* Adjust max-width for smaller screens */
+                padding: 0 15px;
+                /* Adjust padding for smaller screens */
+            }
+        }
+
+        .title {
+            position: relative;
+            height: 35vw;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            /* Ensure the title appears above the navbar */
+        }
+
+        .background-image {
+            position: absolute;
+            background-attachment: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, #5aace3ce, rgba(0, 0, 0, 0.5)), url("./image/a1.jpg");
+            background-size: cover;
+            filter: brightness(60%);
+        }
+
+        h1 {
+            position: relative;
+            font-size: 4.9vw;
+            margin-top: 200px;
+            padding: 10px 20px;
+            z-index: 1;
+            max-width: 1200px;
+            /* Adjust the max-width as needed */
+            margin-left: auto;
+            /* Auto left margin */
+            margin-right: auto;
+            /* Ensure the text appears in front of the background */
+        }
+
+
+
+
+        /* Styling for the container holding the content */
+        .contain {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 100px;
+        }
+
+        /* Styling for the container holding the permits */
+        .permits-container {
+            display: flex;
+            background-image: linear-gradient(to bottom, #22475f, #598eb1);
+            border-radius: 25px;
+        }
+
+        /* Styling for the permits container */
+        .permits {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* Align items to the start (left) of the container */
+            border-right: 1px solid #ddd;
+            padding-right: 20px;
+            font-family: calibri;
+            font-style: italic;
+            text-decoration: underline;
+            height: 100%;
+            /* Set a fixed height */
+        }
+
+        /* Styling for each permit item */
+        .permit {
+            display: flex;
+            align-items: center;
+            /* Align items vertically */
+            cursor: pointer;
+            padding: 15px 10px;
+            transition: all 0.3s ease;
+        }
+
+        /* Styling for permit images */
+        .permit img {
+            width: 80px;
+            height: auto;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        /* Styling for permit names */
+        .permit-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #ffffff;
+        }
+
+        /* Hover effect for permits */
+        .permit:hover {
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+            /* Scale up on hover */
+        }
+
+        /* Styling for the details of the permit */
+        .permit-details {
+            max-width: 600px;
+            margin-left: 20px;
+        }
+
+        /* Styling for enlarged permit images */
+        .permit-details img {
+            width: 842px;
+            /* A4 width */
+            height: 595px;
+            /* A4 height */
+            border-radius: 5px;
+        }
+
+        /* Removed .left-border */
+
+
+
+        /* ----------------------------------------------MOBILE DEVICE---------------------------------------------- */
+
+        @media only screen and (max-width: 1099px) {
+            .content {
+                max-width: 1200px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 0 10px;
+            }
+
+            .title {
+                position: relative;
+                height: 520px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+                /* Ensure the title appears above the navbar */
+            }
+
+            .background-image {
+                position: absolute;
+                background-attachment: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-image: linear-gradient(to bottom, #5aace3ce, rgba(0, 0, 0, 0.5)), url("./cimages/back.jpg");
+                background-size: cover;
+                filter: brightness(60%);
+            }
+
+            h1 {
+                position: relative;
+                font-size: 40px;
+                margin-top: 200px;
+                padding: 10px 20px;
+                z-index: 1;
+                max-width: 1200px;
+                /* Adjust the max-width as needed */
+                margin-left: auto;
+                /* Auto left margin */
+                margin-right: auto;
+                /* Ensure the text appears in front of the background */
+            }
+
+            .nav-link {
+                font-size: 10px;
+            }
+
+            /* Styling for the container holding the content */
+            .contain {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                padding-bottom: 70px;
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 50px;
+            }
+
+            /* Styling for the container holding the permits */
+            .permits-container {
+                display: flex;
+                background-image: linear-gradient(to bottom, #22475f, #598eb1);
+                border-radius: 25px;
+
+            }
+
+            /* Styling for the permits container */
+            .permits {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                /* Align items to the start (left) of the container */
+                border-right: 1px solid #ddd;
+                padding-right: 20px;
+                font-style: italic;
+                text-decoration: underline;
+                height: 100%;
+                /* Set a fixed height */
+            }
+
+            /* Styling for each permit item */
+            .permit {
+                display: flex;
+                align-items: center;
+                /* Align items vertically */
+                cursor: pointer;
+                padding: 10px 8px;
+                transition: all 0.3s ease;
+            }
+
+            /* Styling for permit images */
+            .permit img {
+                width: 70px;
+                height: auto;
+                border-radius: 5px;
+                margin-right: 10px;
+            }
+
+            /* Styling for permit names */
+            .permit-name {
+                font-weight: bold;
+                margin-bottom: 5px;
+                color: #333;
+            }
+
+            /* Styling for the details of the permit */
+            .permit-details {
+                width: 100%;
+                margin-left: 0px;
+                padding-top: 50px;
+            }
+
+            /* Styling for enlarged permit images */
+            .permit-details img {
+                width: 100%;
+                /* A4 width */
+                height: 300px;
+                /* A4 height */
+                border-radius: 5px;
+            }
+
+            /* Removed .left-border */
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: white;">
+
+        <!-- Replace "Navbar" text with an image logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="./image/logo.png" alt="Logo" style="background-color: rgb(255, 255, 255);">
+            <!-- Adjust max-height as needed -->
+        </a>
+        <!-- Toggler/collapsible Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto" style="background-color: white;">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <!-- Dropdown -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdownMenuLink" role="button"
+                        aria-expanded="false">About us</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="permit.html">Permits</a></li>
+                        <li><a class="dropdown-item" href="policies.html">Policies</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" aria-expanded="false">
+                        Accreditation
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="nsf.html">NSF Certification</a></li>
+                        <li><a class="dropdown-item" href="17025.html">ISO/IEC 17025</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="calibration.html" id="navbarDropdownMenuLink2"
+                        role="button" aria-expanded="false">Calibration</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                        <li><a class="dropdown-item" href="thermometry.html">Thermometry and Hygrometry</a></li>
+                        <li><a class="dropdown-item" href="pressure.html">Pressure</a></li>
+                        <li><a class="dropdown-item" href="mass.html">Mass</a></li>
+                        <li><a class="dropdown-item" href="volume.html">Volume</a></li>
+                        <li><a class="dropdown-item" href="analytical.html">Analytical and Environmental</a></li>
+                        <li><a class="dropdown-item" href="dimentional.html">Dimensional</a></li>
+                        <li><a class="dropdown-item" href="electrical.html">Electrical and Frequency</a></li>
+                        <li><a class="dropdown-item" href="density.html">Density</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button"
+                        aria-expanded="false">Services</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <li><a class="dropdown-item" href="calibration.html">Calibration</a></li>
+                        <li><a class="dropdown-item" href="training.php">Training and Consultancy</a></li>
+                        <li><a class="dropdown-item" href="proficiency.php">Proficiency Testing</a></li>
+                        <li><a class="dropdown-item" href="inspection.html">Inspection and Certification</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink3" role="button"
+                        aria-expanded="false">Contact Us</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink3">
+                        <li><a class="dropdown-item" href="ins.php">Calibration and Inspection</a></li>
+                        <li><a class="dropdown-item" href="tra.php">Training and Consultancy</a></li>
+                        <li><a class="dropdown-item" href="pro.php">Proficiency Testing</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+
+    <div class="title">
+
+        <div class="background-image"></div>
+        <h1 class="divider line double-razor" style="color: white;">Certificate of Accreditation<p
+                style="font-style: italic; font-size: 20px;"><br>
+                "Our commitment to excellence, quality, and industry standards showcases our dedication to maintaining
+                the highest standards in our field." </p>
+        </h1>
+
+    </div>
+
+
+    <div class="container">
+
+
+
+        <div class="contain">
+            <div class="permits-container">
+                <div class="permits">
+                    <div class="permit" onclick="showPermit('./17025/NSF Certificate1.jpg', 'Permit 1')">
+                        <img src="./17025/NSF Certificate1.jpg" alt="Permit 1">
+                        <span class="permit-name">Mr. Arjhon M. Angay-Angay</span>
+                    </div>
+                    <div class="permit" onclick="showPermit('./17025/NSF Certificate2.jpg', 'Permit 2')">
+                        <img src="./17025/NSF Certificate2.jpg" alt="Permit 2">
+                        <span class="permit-name">Mr. Daryl Orjaleza</span>
+                    </div>
+                </div>
+            </div>
+            <div class="permit-details">
+                <div id="enlarged-permit"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="up">
+            <h3 class="con">Contact Us</h3>
+            <a href="https://www.facebook.com/profile.php?id=100093160215001&mibextid=JRoKGi">
+                <i class="fa-brands fa-square-facebook" style="color: #ffffff;"></i>
+            </a>
+        </div>
+        <div class="separator">
+            <div id="separator-5435933ece" class="cmp-separator">
+                <hr class="cmp-separator__horizontal-rule">
+            </div>
+        </div>
+        <div class="divs">
+            <t class="contact"><strong>Contact Details</strong><br>Sales Department<br>Globe: 0945 408 2266<br>Sun: 0925
+                503 1523<br>Manila Line: (02) 8533 0162<br>Laguna Line: (049) 511 8177</t>
+            <t class="address"><strong>Office Address</strong><br>
+                Artica Building, National Highway corner Almazora Street,<br> Canlalay, Biñan City 4024, Laguna,
+                Philippines</t>
+            <t class="email"><strong>Email Address</strong><br>
+                info@southerncalibration.com<br>southerncalab@gmail.com</t>
+            <t class="ser">
+                <strong>Services</strong><br>
+                <a href="ins.php" class="no-style">Calibration and Inspection</a><br>
+                <a href="tra.php" class="no-style">Training and Consultancy</a><br>
+                <a href="pro.php" class="no-style">Proficiency Testing</a>
+            </t>
+
+        </div>
+        <div class="separator">
+            <div id="separator-5435933ece" class="cmp-separator">
+                <hr class="cmp-separator__horizontal-rule">
+            </div>
+        </div>
+        <div class="copyright">PAB ACCREDITED CALIBRATION LABORATORY TO ISO/IEC 17025:2017<br>Copyright © 2024 All
+            Rights Reserved. Southern Metrology and Calibration Services, Inc.
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+
+    <script>
+        // Show the first permit image details by default
+        window.onload = function () {
+            showPermit('./17025/NSF Certificate1.jpg', '');
+        };
+
+        function showPermit(imageSrc, permitName) {
+            const enlargedPermit = document.getElementById('enlarged-permit');
+            enlargedPermit.innerHTML = `
+          <img src="${imageSrc}" alt="${permitName}">
+        `;
+        }
+    </script>
+
+    <script>
+        // Check if the screen width is below 800px
+        if (window.innerWidth <= 800) {
+            // Variable to track if the dropdown is open
+            var dropdownOpen = false;
+
+            // Add event listeners to toggle dropdowns on click for touch screen devices
+            document.querySelectorAll('.dropdown-toggle').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    var dropdownMenu = this.nextElementSibling;
+                    if (!dropdownMenu.classList.contains('show')) {
+                        // Close all other open dropdowns
+                        document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+                            menu.classList.remove('show');
+                        });
+                        dropdownMenu.classList.add('show');
+                        // Update the dropdownOpen variable
+                        dropdownOpen = true;
+                    } else {
+                        // If the dropdown is already open, close it
+                        dropdownMenu.classList.remove('show');
+                        // Update the dropdownOpen variable
+                        dropdownOpen = false;
+                    }
+                });
+            });
+
+            // Add event listener to the navbarDropdownMenuLink element to navigate to other HTML files
+            document.getElementById('navbarDropdownMenuLink').addEventListener('click', function (e) {
+                // If the dropdown is open, prevent navigation
+                if (dropdownOpen) {
+                    e.preventDefault();
+                } else {
+                    // If the dropdown is closed, navigate to about.html
+                    window.location.href = 'about.html';
+                }
+            });
+
+            // Add event listener to the navbarDropdownMenuLink element to navigate to other HTML files
+            document.getElementById('navbarDropdownMenuLink2').addEventListener('click', function (e) {
+                // If the dropdown is open, prevent navigation
+                if (dropdownOpen) {
+                    e.preventDefault();
+                } else {
+                    // If the dropdown is closed, navigate to calibration.html
+                    window.location.href = 'calibration.html';
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
